@@ -16,6 +16,7 @@ class Pokeball:
         self.nombre = nombre
         self.precio = precio
         self.fecha = fecha
+        print("Se ha creado la pokeball con exito")
 
     def __str__(self):
         return f"El {self.nombre} vale {self.precio} pesa {self.peso} y su de fecha de fabricacion es {self.fecha}."
