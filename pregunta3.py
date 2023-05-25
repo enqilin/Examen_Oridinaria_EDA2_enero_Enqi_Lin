@@ -8,12 +8,11 @@
 import csv
 
 class Pokemon:
-    def __ini__T(self,nombre,tipo):
+    def __init__(self,nombre,tipo):
         self.nombre = nombre
         self.tipo = tipo
 
     def clasificacion(self, PS , Ataque ,Defensa,Ataque__Especial,Defensa_Especial , Velocidad):
-        super().__ini__(self,nombre,tipo):
         self.PS = PS
         self.Ataque = Ataque
         self.Defensa = Defensa
@@ -21,10 +20,10 @@ class Pokemon:
         self.Defensa_Especial = Defensa_Especial
         self.Velocidad = Velocidad
 
-    def __srt__(self):
-        return f."{self.nombre} es de tipo {self.tipo}. "
+    def __str__(self):
+        return f"{self.nombre} es de tipo {self.tipo}."
 
-class pokemon:
+"""class pokemon:
     lista = []
     with open('pokemon.csv', newline = '\n') as fichero:
         reader = csv.reader(fichero , delimiter= ';')
@@ -47,8 +46,14 @@ class pokemon:
                 writer.writerow(pokemon.nombre,pokemon.tipo,pokemon.PS,pokemon.Ataque,pokemon.Defensa,pokemon.Ataque__Especial,pokemon.Defensa_Especial,pokemon.Velocidad)
 
 
+"""
 
 
-if __name__=="__main__":
 
-hazte ,con ,todas, las ,pokemon
+
+objecto = Pokemon("charizard","fuego")
+objecto.clasificacion(64,43,23,76,53,70)
+print(objecto)
+
+
+"""hazte ,con ,todas, las ,pokemon"""

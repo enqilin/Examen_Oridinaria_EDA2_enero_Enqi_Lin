@@ -17,8 +17,8 @@ class Pokeball:
         self.precio = precio
         self.fecha = fecha
 
-    def __srt__(self):
-        return f."El {self.nombre} vale {self.precio} pesa {self.peso} y su de fecha de fabricacion es {self.fecha}."
+    def __str__(self):
+        return f"El {self.nombre} vale {self.precio} pesa {self.peso} y su de fecha de fabricacion es {self.fecha}."
 
 
 
