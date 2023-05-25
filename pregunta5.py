@@ -73,3 +73,24 @@ class Arista(object):
 
 
 if __name__=="__main__":
+    Grafo = Grafo()
+    Grafo.insertar_vertice(1)
+    Grafo.insertar_vertice(2)
+    Grafo.insertar_vertice(3)
+    Grafo.insertar_vertice(4)
+    Grafo.insertar_vertice(5)
+    Grafo.insertar_vertice(6)
+    Grafo.insertar_vertice(7)
+    Grafo.insertar_vertice(8)
+    Grafo.insertar_vertice(9)
+    Grafo.insertar_vertice(0)
+    Grafo.insertar_arista(1,6,8)
+    Grafo.insertar_arista(2,7,9)
+    Grafo.insertar_arista(3,4,8)
+    Grafo.insertar_arista(4,3,9)
+    Grafo.insertar_arista(6,1,7)
+    Grafo.insertar_arista(7,2,6)
+    Grafo.insertar_arista(8,1,3)
+    Grafo.insertar_arista(9,2,4)
+    Grafo.insertar_arista(0,4,6)
+    
