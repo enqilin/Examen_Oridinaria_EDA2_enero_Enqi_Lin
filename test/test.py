@@ -1,9 +1,9 @@
-import unnitest
+import unittest
 import pregunta3 as db
 import pokeball as pb
 
 
-class test(unnitest.TestCase):
+class test(unittest.TestCase):
     def setUp(self):
         db.pokemon.lista = [db.Pokemon("Ratata","normal"),
                             db.Pokemon("Pikachu","electrico"),
@@ -16,7 +16,7 @@ class test(unnitest.TestCase):
         self.assertEqual(db.pokemon.lista[2].clasificacion(78,84,78,109,85,100),"Charizard es de tipo fuego.")
 
     def test_pokeball(self):
-        self.assertEqual(pb.pokeball.crear("pokeball",200,100),"pokeball")
-        self.assertEqual(pb.pokeball.crear("superball",600,200),"superball")
-        self.assertEqual(pb.pokeball.crear("ultraball",1200,300),"ultraball")
-        self.assertEqual(pb.pokeball.crear("masterball",0,0),"masterball")
+        self.assertEqual(pb.pokeball("pokeball",200,100,2302),"pokeball vale 200 y pesa 100 y su de fecha de fabricacion es 2302.")
+        self.assertEqual(pb.pokeball("superball",600,200,3024),"superball vale 600 y pesa 200 y su de fecha de fabricacion es 3024.")
+        self.assertEqual(pb.pokeball("ultraball",1200,300,1203),"ultraball vale 1200 y pesa 300 y su de fecha de fabricacion es 1203.")
+        self.assertEqual(pb.pokeball("masterball",0,0,2012),"masterball vale 0 y pesa 0 y su de fecha de fabricacion es 2012. ")
