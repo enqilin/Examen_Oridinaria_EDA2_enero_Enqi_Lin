@@ -1,6 +1,4 @@
-""""
-
-
+"""
 Crea una clase llamada Pokemon.py que tenga los atributos nombre y tipo. Crea el constructor de la clase. Añadir en el constructor un print para informar de que el Pokemon se ha creado con éxito. 
 Crear un método llamado clasificacion que clasifique a los Pokemon según su tipo de la siguiente manera:
 
@@ -14,19 +12,18 @@ Crea una lista con un numero arbitrario de objetos tipo Pokemon. Recorre los ele
 import csv
 
 class Pokemon:
-    def __ini__T(self,nombre,tipo):
+    def __init__(self,nombre,tipo):
         self.nombre = nombre
         self.tipo = tipo
 
     def clasificacion(self, PS , Ataque ,Defensa,Ataque__Especial,Defensa_Especial , Velocidad):
-        super().__ini__(self,nombre,tipo):
         self.PS = PS
         self.Ataque = Ataque
         self.Defensa = Defensa
         self.Ataque__Especial = Ataque__Especial
         self.Defensa_Especial = Defensa_Especial
         self.Velocidad = Velocidad
-class pokemon:
+"""class pokemon:
     lista = []
     with open('pokemon.csv', newline = '\n') as fichero:
         reader = csv.reader(fichero , delimiter= ';')
@@ -47,3 +44,10 @@ class pokemon:
             writer = csv.writer(fichero,delimiter = ';')
             for pokemon in pokemon.lista:
                 writer.writerow(pokemon.nombre,pokemon.tipo,pokemon.PS,pokemon.Ataque,pokemon.Defensa,pokemon.Ataque__Especial,pokemon.Defensa_Especial,pokemon.Velocidad)
+
+"""
+
+if __name__=='__main__':
+    objecto = Pokemon("charizar","fuego")
+    objecto.clasificacion(64,43,23,76,53,70)
+    print(objecto)
