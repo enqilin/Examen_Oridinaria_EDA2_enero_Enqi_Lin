@@ -32,7 +32,7 @@ class Grafo(object):
         self.dirigido = dirigido
 
     def insertar_vertice(grafo , dato):
-        nodo = nodoVertice()
+        nodo = nodoVertice(dato)
         if grafo.inicio is None or dato < grafo.inicio.info:
             nodo.sig = grafo.inicio
             grafo.inicio = nodo
@@ -52,18 +52,18 @@ class Grafo(object):
             Grafo.agregar_arista(destino.adyacentes,dato,origen.info)
 
     def agregar_arista(origen,dato,destino):
-        nodo = nodoArista()
+        nodo = nodoArista(dato,destino)
         if origen.inicio is None or origen.inicio.destino > destino:
             nodo.sig = origen.inicio
             origen.inicio = nodo
         else:
-            act = origen.inicio
-            ant = origen.inicio.sig
-            while act.sig is not None and act.destino > nodo.destino:
-                ant
+            ant = origen.inicio
+            act = origen.inicio.sig
+            while act is not None and act.destino > nodo.destino:
+                ant = act
                 act = act.sig
             nodo.sig = act
-            act.sig = nodo
+            ant.sig = nodo
         origen.tamanio += 1
 
 class Arista(object):
@@ -93,4 +93,4 @@ if __name__=="__main__":
     Grafo.insertar_arista(8,1,3)
     Grafo.insertar_arista(9,2,4)
     Grafo.insertar_arista(0,4,6)
-    
+
