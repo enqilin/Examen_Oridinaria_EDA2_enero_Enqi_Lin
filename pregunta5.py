@@ -44,7 +44,7 @@ class Grafo(object):
                 act = act.sig
             nodo.sig = act
             ant.sig = nodo
-        grafo.tamanio += 1 
+        grafo.tamanio += 1
 
     def insertar_arista(grafo, dato,origen,destino):
         Grafo.agregar_arista(origen.ayacentes,dato,destino.info)
