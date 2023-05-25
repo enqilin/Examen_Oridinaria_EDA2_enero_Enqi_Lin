@@ -122,8 +122,7 @@ class Arbol:
         return mensaje
 
     def __str__(self):
-        return self.imprimir()
-    
+        return self.comprimir("hazte,con,todos,pokemon")
 
 
 
@@ -144,6 +143,5 @@ if __name__=="__main__":
     arbol.insertar("K",0.03)
     arbol.insertar(",",0.03)
     arbol.imprimir()
-    print(arbol.comprimir("hazte,con,todos,pokemon"))
-    print(arbol.descomprimir("100111101000011001101100110111111001111101011110111011110111"))
-        
+    arbol.comprimir("hazte,con,todos,pokemon")
+    print(arbol)
