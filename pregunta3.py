@@ -27,6 +27,10 @@ class Pokemon:
         self.Ataque__Especial = Ataque__Especial
         self.Defensa_Especial = Defensa_Especial
         self.Velocidad = Velocidad
+
+    def __srt__(self):
+        return f."{self.nombre} es de tipo {self.tipo}. "
+
 class pokemon:
     lista = []
     with open('pokemon.csv', newline = '\n') as fichero:
@@ -48,3 +52,9 @@ class pokemon:
             writer = csv.writer(fichero,delimiter = ';')
             for pokemon in pokemon.lista:
                 writer.writerow(pokemon.nombre,pokemon.tipo,pokemon.PS,pokemon.Ataque,pokemon.Defensa,pokemon.Ataque__Especial,pokemon.Defensa_Especial,pokemon.Velocidad)
+
+
+
+
+if __name__=="__main__":
+    

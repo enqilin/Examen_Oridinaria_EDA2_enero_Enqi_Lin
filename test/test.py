@@ -1,7 +1,7 @@
 import unnitest
-from pregunta2 import Pokemon
+import pregunta2 as db
 
 
 class test(unnitest.TestCase):
     def setUp(self):
-        
+        db.pokemon.lista = [db.Pokemon("Ratata","normal"),
