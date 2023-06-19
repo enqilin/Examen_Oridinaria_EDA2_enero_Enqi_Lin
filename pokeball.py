@@ -9,13 +9,15 @@ Crea algunas Pokeballs. Prueba a mostrar los datos de algunas Pokeballs ordenada
 
 
 """
+import datetime
+
 
 class Pokeball:
-    def __init__(self,peso,nombre,precio, fecha):
+    def __init__(self,peso,nombre,precio, datetime):
         self.peso = peso
         self.nombre = nombre
         self.precio = precio
-        self.fecha = fecha
+        self.fecha = datetime
         print("Se ha creado la pokeball con exito")
 
     def __str__(self):
